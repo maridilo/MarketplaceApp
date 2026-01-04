@@ -29,12 +29,6 @@ El proyecto sigue el patrón de arquitectura **MVVM (Model-View-ViewModel)** con
     * `ExecutorService` (Manejo de hilos en segundo plano).
     * `RecyclerView` & `GridLayoutManager`.
 
-## 📸 Capturas de Pantalla
-
-| Login | Catálogo | Carrito |
-|:---:|:---:|:---:|
-| | | |
-
 ## 🚀 Instalación
 
 1. Clonar el repositorio.

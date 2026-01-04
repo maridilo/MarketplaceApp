@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarCart"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="Mi Carrito"
+        app:titleTextColor="@android:color/white"
+        app:navigationIcon="?attr/homeAsUpIndicator"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvCartItems"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:paddingBottom="16dp"/>
+
+            <LinearLayout
+                android:id="@+id/tvEmptyCart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@android:drawable/ic_menu_delete"
+                    app:tint="#BDBDBD"
+                    android:layout_marginBottom="16dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tu carrito está vacío"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#9E9E9E"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¡Añade algo rico!"
+                    android:textSize="14sp"
+                    android:textColor="#BDBDBD"/>
+            </LinearLayout>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tvCartTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total: 0.00 €"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="end"
+            android:textColor="@android:color/black"
+            android:layout_marginVertical="16dp" />
+
+        <Button
+            android:id="@+id/btnCheckout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pagar Ahora"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/green_success"
+            android:padding="12dp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+</LinearLayout>

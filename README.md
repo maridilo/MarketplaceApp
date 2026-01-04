@@ -1,5 +1,5 @@
 https://github.com/maridilo/MarketplaceApp.git
-
+https://gamma.app/docs/Marketplace-App-Prueba-de-Concepto-POC-a1mcb1yqrxqvcyb
 # 🛒 Marketplace App - Android
 
 Aplicación nativa de comercio electrónico desarrollada como Proyecto Final para la asignatura de **Programación Dirigida por Eventos**.
